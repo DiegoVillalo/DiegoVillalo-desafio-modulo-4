@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #ffffff;
+  margin: 0;
+}
+
+.index {
+  height: 100vh;
+  background-image: url(../img/bienvenida2.png);
+  background-size: cover;
+}
+@media (min-width: 960px) {
+  .index {
+    height: 700px;
+    background-image: url(../img/bienvenida.jpg);
+    background-size: cover;
+  }
+}
+.index__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+.index__title {
+  margin: 0px;
+  font-size: 48px;
+}
+.index__person {
+  margin: 0;
+  font-size: 32px;
+}
+
+.presentation {
+  padding: 55px 32px 120px 32px;
+  background-color: #141414;
+}
+@media (min-width: 960px) {
+  .presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+.presentation__img {
+  display: none;
+}
+@media (min-width: 960px) {
+  .presentation__img {
+    display: inherit;
+    width: 380px;
+    height: 380px;
+  }
+  .presentation__container {
+    min-width: 487px;
+    max-width: 751px;
+    padding: 0 50px;
+  }
+}
+
+.presentation__title,
+.presentation__text {
+  margin: 0;
+}
+.presentation__title {
+  text-align: center;
+  margin-bottom: 46px;
+  font-size: 32px;
+}
+.presentation__text {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.services-section {
+  color: #2c2c2c;
+}
+
+.services__title {
+  text-align: center;
+  font-size: 32px;
+}
+.services-content {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 960px) {
+  .services-content {
+    flex-direction: row-reverse;
+  }
+}
+
+.services-card {
+  text-align: center;
+  padding: 0 57px;
+}
+.services-img {
+  width: 138px;
+  height: 128px;
+}
+
+.services-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 7px;
+}
+.services-card-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 100px;
+}
